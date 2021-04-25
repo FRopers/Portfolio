@@ -1,0 +1,5 @@
+@keyframes circle {
+    to {
+        stroke-dashoffset: var(--percent);
+    }
+}
