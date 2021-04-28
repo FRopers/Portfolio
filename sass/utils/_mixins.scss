@@ -1,0 +1,9 @@
+@mixin btn($variable) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    background-color: $variable
+}

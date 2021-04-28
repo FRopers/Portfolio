@@ -3,97 +3,150 @@
     margin: auto;
 }
 
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
 .title {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 150px;
     width: 100%;
-    background-color: #424b5a; 
-    background-size: cover;
+    margin-top: 50px;
+    background-color: $color_primary;
     & div {
-        color: white;
-    }
-}
-
-.about {
-    display: flex;
-    justify-content: space-between;
-    & div {
-    width: 40%;  
-    }
-}
-
-.circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    width: 300px;
-    border: 10px solid black;
-    border-radius: 50%;
-}
-
-.chart {
-    position: relative;
-    display: inline-block;
-    width: 140px;
-    height: 140px;
-    margin-bottom: 26px;
-    text-align: center;
-}
-
-.skills {
-    padding: 50px;
-    &__html {
-        stroke: $color_skills_html;
-        --percent: 152;
-    }
-    &__css {
-        stroke: $color_skills_css;
-        --percent: 162;
-    }
-    &__js {
-        stroke: $color_skills_js;
-        --percent: 228;
-    }
-    &__node {
-        stroke: $color_skills_node;
-        --percent: 266;
-    }
-}
-
-svg {
-    & circle {
-        fill: none;
-        stroke-width: 10px;
-        stroke-linecap: round;
-        stroke-dasharray: 380;
-        stroke-dashoffset: 380;
-        &:nth-child(1) {
-            stroke: $color_skills_stroke_background;
-            stroke-dashoffset: 0;
-        }
-        &:nth-child(2) {
-            animation: circle 3s forwards;
-        }
+        color: $color_txt_primary;
     }
 }
 
 .portfolio {
-    & div {
-        width: 500px;
-        height: 280px;
-        border: 1px solid black;
-        border-radius: 10px;
-        margin-bottom: 20px;
+    background: url(/images/gris_texture.jpg) no-repeat center;
+    background-size: cover;
+    & h2 {
+        color: $background_color_primary;
     }
-    & img {
+    &__layout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.thumbnails {
+    position: relative;
+    width: 350px;
+    height: 330px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px $shadow_color;
+    margin: 20px;
+    overflow: hidden;
+    background-color: $background_color_primary;
+    &__picture {
         height: 100%;
         width: 100%;
         max-height: auto;
         border-radius: inherit;
         object-fit: cover;
+        border-bottom: 1px solid #c7c7c7;
+    }
+    &__text {
+        padding: 10px;
+        & h3 {
+            justify-content: start;
+            margin-bottom: 10px;
+        }
+        & p {
+            font-size: 1em;
+        }
+    }
+    &:hover {
+        animation: 0.4s thumbnails ease-in-out forwards;
     }
 }
+
+.github {
+    position: absolute;
+    width: 40px;
+    top: 10px;
+    right: 10px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    & div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 40%;  
+    
+    }
+    & hr {
+        height: 4px;    
+        width: 60px;
+        background-color: $color_primary;
+        border: none;
+        margin: 8px 0 0 0;
+    }
+    & h2 {
+        color: $color_txt_secondary;
+        justify-content: start;
+    }   
+    & a {
+        font-weight: 700;
+        @include btn($background_color_primary);
+        border: 3px solid $color_primary;
+        &:hover {
+            color: $color_txt_primary;
+            background-color: $color_primary;
+        }
+    } 
+}
+
+.skills {
+    background-color: $color_secondary;
+    color: $color_txt_primary;
+    & div:first-child{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__info {
+        text-align: center;
+        width: 30%;
+        margin-bottom: 50px;
+    }
+    &__icon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        & div {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        & p {
+            text-align: center;
+        }
+    }
+}
+
+.fab, .fas {
+    font-size: 5em;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
 

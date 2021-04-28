@@ -1,5 +1,5 @@
-@keyframes circle {
-    to {
-        stroke-dashoffset: var(--percent);
+@keyframes thumbnails{
+    100% {
+      transform: scale(1.05);
     }
-}
+  }
