@@ -1,0 +1,22 @@
+footer {
+    background-color: $background_color_secondary;
+    padding: 50px 0;
+    & .fab {
+        font-size: 2em;
+    }
+    & .fas {
+        font-size: 2.1em;
+    }
+}
+
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    & a {
+        color: $color_txt_primary;
+    }
+    & .fab, .fas{
+        margin: 20px;
+    }
+}

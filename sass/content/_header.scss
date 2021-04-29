@@ -1,0 +1,57 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    & nav {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        height: auto;
+        padding: 8.5px 0;
+        & ul {
+            display: flex;
+            list-style: none;
+            @media (max-width: 1024px) {
+                position: absolute;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                right: 0;
+                top: 50px;
+                height: auto;
+                width: 100%;
+                z-index: 20;
+                background-color: $background_color_secondary;
+                & a {
+                    color: $color_txt_primary;
+                }
+            }
+        }
+        & li {
+            padding: 0 10px;
+            @media (max-width: 1024px) {
+                padding: 20px 0;
+            }
+        }
+        @media (max-width: 1024px) {
+            padding: 8.5px 10px;
+        }
+    }
+}
+
+.toggle_btn {
+    display: none;
+    font-size: 0.4em;
+    cursor: pointer;
+    @media (max-width: 1024px) {
+        display: block;
+    }
+}
+
+.menu-delete {
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}

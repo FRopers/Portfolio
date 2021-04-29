@@ -1,0 +1,17 @@
+.layout {
+    width: 65%;
+    min-width: 950px;
+    margin: auto;
+    @media (max-width: 1024px) {
+        width: 95%;
+        min-width: auto;
+    }
+}
+
+
+.fab, .fas {
+    font-size: 5em;
+    margin-bottom: 5px;
+}
+
+

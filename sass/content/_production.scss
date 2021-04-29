@@ -1,0 +1,61 @@
+.portfolio {
+    background-color: $color_tertiary;
+    & h2 {
+      color: $color_txt_secondary;
+    }
+    & hr {
+        background-color: $background_color_secondary;
+    }
+    &__layout {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.thumbnails {
+    position: relative;
+    width: 350px;
+    height: 390px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px $shadow_color;
+    margin: 20px;
+    overflow: hidden;
+    background-color: $background_color_primary;
+    &__picture {
+        height: 100%;
+        width: 100%;
+        max-height: auto;
+        border-radius: inherit;
+        object-fit: cover;
+        border-bottom: 1px solid #c7c7c7;
+    }
+    & .fa-github {
+        position: absolute;
+        font-size: 2.5em;
+        top: 10px;
+        right: 10px;
+        &:hover {
+            animation: github 600ms ease-in-out forwards;
+        }
+    }
+    &__text {
+        padding: 10px;
+        & h3 {
+            justify-content: start;
+            margin-bottom: 10px;
+        }
+        & p {
+            height: 66px;
+            font-size: 1em;
+        }
+        & a {
+            @include btn($background_color_primary);
+            border: 1px solid #c7c7c7;
+            margin-bottom: 20px;
+        }
+    }
+    &:hover {
+        animation: thumbnails 400ms ease-in-out forwards;
+    }
+}

@@ -11,5 +11,13 @@
     "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FRopers/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FRopers/Portfolio/issues"
+  },
+  "homepage": "https://github.com/FRopers/Portfolio#readme"
 }

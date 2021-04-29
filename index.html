@@ -1,231 +1,256 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flavien Ropers | Développeur Web Junior</title>
-</head>
-<body>
-    <header class="fixed header_contain">
-        <div class="layout">
-            <nav>
-                <div>
-                    <h1>Flavien <span>ROPERS</span></h1>
-                </div>
-                
-                <ul>
-                    <li>
-                        <a href="#portfolio_ancre">Réalisations</a>
-                    </li>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flavien Ropers | Développeur Web Junior</title>
+    </head>
 
-                    <li>
-                        <a href="#about_ancre">Présentation</a>
-                    </li>
+    <body>
+        <header>
+            <div class="layout">
+                <nav>
+                    <div>
+                        <h1>Flavien <span>ROPERS</span></h1>
+                    </div>
+
+                    <div id="toggle_btn" class="toggle_btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    
+                    <ul id="menu" class="menu-delete">
+                        <li>
+                            <a href="#about-ancre">Présentation</a>
+                        </li>
+                            
+                        <li>
+                            <a href="#skills-ancre">Compétences</a>
+                        </li>
+
+                        <li>
+                            <a href="#portfolio-ancre">Réalisations</a>
+                        </li>
                         
-                    <li>
-                        <a href="#skills_ancre">Compétences</a>
-                    </li>
-                    <li>Contact</li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="title">
-        <div>
-            <p>
-                Bienvenue sur mon portfolio
-            </p>
-        </div>
-    </section>
-
-    <section id="portfolio_ancre" class="portfolio">
-        <div class="layout">
-            <h2>Réalisations</h2>
-
-            <hr>
-
-            <div class="portfolio__layout">
-                <div class="thumbnails">
-                    <div>
-                        <img src="./images/reservia.png" alt="reservia" class="thumbnails__picture">
-    
-                        <a href="https://github.com/FRopers/Ropersflavien_2_02102020" class="github">
-                            <img src="./images/github-brands.svg" alt="logo de github">
-                        </a>
-                    </div>
-    
-                    <div class="thumbnails__text">
-                        <h3>Réservia</h3>
-                        <p>Intégration d'une maquette en HTML/CSS</p>
-                    </div>                
-                </div>
-        
-                <div class="thumbnails">
-                    <div>
-                        <img src="./images/ohmyfood.png" alt="ohmyfood" class="thumbnails__picture">
-    
-                        <a href="https://github.com/FRopers/Ropersflavien_3_02112020" class="github">
-                            <img src="./images/github-brands.svg" alt="logo de github">
-                        </a>
-                    </div>
-    
-                    <div class="thumbnails__text">
-                        <h3>Ohmyfood</h3>
-                        <p>Intégration d'une maquette en HTML/CSS en utilisant sass pour les animations</p>
-                    </div>
-                </div>
-    
-                <div class="thumbnails">
-                    <div>
-                        <img src="./images/orinoco.png" alt="orinoco" class="thumbnails__picture">
-    
-                        <a href="https://github.com/FRopers/Ropersflavien_5_28122020" class="github">
-                            <img src="./images/github-brands.svg" alt="logo de github">
-                        </a>
-                    </div>
-    
-                    <div class="thumbnails__text">
-                        <h3>Orinoco</h3>
-                        <p>Création de la partie frontend d'un site e-commerce en utisant bootsratp et JavaScript</p>
-                    </div>       
-                </div>
-                
-                <div class="thumbnails">
-                    <div>
-                        <img src="./images/so_pekocko.png" alt="so_pekocko" class="thumbnails__picture">
-    
-                        <a href="https://github.com/FRopers/Ropersflavien_6_0302021" class="github">
-                            <img src="./images/github-brands.svg" alt="logo de github">
-                        </a>
-                    </div>
-    
-                    <div class="thumbnails__text">
-                        <h3>So Pekocko</h3>
-                        <p>Création d'une API avec Node.js et le framework express pour une application d'avis gastronomique</p>
-                    </div>
-                </div>
-                
-                <div class="thumbnails">
-                    <div>
-                        <img src="./images/groupomania.png" alt="groupomania" class="thumbnails__picture">
-    
-                        <a href="https://github.com/FRopers/Ropersflavien_7_19022021" class="github">
-                            <img src="./images/github-brands.svg" alt="logo de github">
-                        </a>
-                    </div>
-    
-                    <div class="thumbnails__text">
-                        <h3>Groupomania</h3>
-                        <p>Création d'un réseau social d’entreprise en utilisant Vue.js et MySQL pour valider la formation d'OpenClassrooms.</p>
-                    </div>
-                </div>
+                        <li>
+                            <a href="#contact-ancre">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <section id="about_ancre" class="about layout">
-        <div>
+        <section class="title">
             <div>
-                <h2>À Propos</h2>
+                <p>
+                    Bienvenue sur mon portfolio
+                </p>
+            </div>
+        </section>
+
+        <section id="about-ancre" class="about layout">
+            <div>
+                <div>
+                    <h2>À Propos</h2>
+
+                    <hr>
+                </div>
+
+                <div>
+                    <p>
+                        Bonjour, je m'appelle Flavien Ropers et je suis un Développeur Web junior.
+                    </p>
+        
+                    <p>
+                        Après plusieurs années dans l'agroalimentaire et la menuiserie, j'ai ressenti le besoin du me rapprocher de mon milieu de cœur qui est l'informatique.
+                    </p>
+
+                    <p>
+                        C'est en 2019 que j'ai découvert le monde du développement Web et suite à cela j'ai décidé d'effectuer ma reconversion professionnelle dans ce milieu, un pari risqué mais que je ne regrette absolument pas.
+                        J'ai donc naturellement suivi une formation de développeur Web auprès de l'organisme OpenClassrooms.
+                    </p>
+        
+                    <p>
+                        Suite à l’obtention d'un Bac+2 à la fin de ce parcours, je continue aujourd'hui dans cette voie avec la motivation et l'envie de me perfectionner dans ce domaine.
+                    </p>
+                </div>
+
+
+                <a href="./images/CV.pdf" target="_self" class="btn" >Consulter CV</a>
+            </div>
+
+            <div class="about-photo">
+                <img src="./images/photo_profil.jpg" alt="Photo du candidat">
+            </div>
+        </section>
+
+        <section id="skills-ancre" class="skills">
+            <div class="layout">
+                <h2>Compétences</h2>
 
                 <hr>
-            </div>
 
-            <div>
-                <p>
-                    Bonjour, je m'appelle Flavien Ropers et je suis un Développeur Web junior.
-                </p>
-    
-                <p>
-                    Après plusieurs années dans l'agroalimentaire et la menuiserie, j'ai ressenti le besoin du me rapprocher de mon milieu de cœur qui est l'informatique.
+                <p class="skills__info">
+                    Elles sont en constantes améliorations, <br>
+                    je vous présente ici les langages, framework et outils que j'ai appris à utiliser tout au long de mon parcours.
                 </p>
 
-                <p>
-                    C'est en 2019 que j'ai découvert le monde du développement Web et suite à cela j'ai décidé d'effectuer ma reconversion professionnelle dans ce milieu, un pari risqué mais que je ne regrette absolument pas.
-                    J'ai donc naturellement suivi une formation de développeur Web auprès de l'organisme OpenClassrooms.
-                </p>
-    
-                <p>
-                    Suite à l’obtention d'un Bac+2 à la fin de ce parcours, je continue aujourd'hui dans cette voie avec la motivation et l'envie de me perfectionner dans ce domaine.
-                </p>
-            </div>
+                <div class="skills__icon">
+                    <div>
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    
+                    <div>
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
 
+                    <div>
+                        <i class="fab fa-js-square"></i>
+                        <p>JavaScript</p>
+                    </div>
 
-            <a href="#" target="_self" class="btn" >Consulter CV</a>
-        </div>
+                    <div>
+                        <i class="fab fa-node"></i>
+                        <p>Node.js / express</p>
+                    </div>
 
-        <div>
-            <img src="./images/photo_profil.jpg" alt="Photo du candidat">
-        </div>
-    </section>
+                    <div>
+                        <i class="fas fa-database"></i>
+                        <p>MySQL</p>
+                    </div>
+                    
+                    <div>
+                        <i class="fab fa-sass"></i></i>
+                        <p>Sass</p>
+                    </div>
+                    
+                    <div>
+                        <i class="fab fa-bootstrap"></i>
+                        <p>Bootstrap</p>
+                    </div>
 
-    <section id="skills_ancre" class="skills">
-        <div class="layout">
-            <h2>Compétences</h2>
+                    <div>
+                        <i class="fab fa-vuejs"></i>
+                        <p>Vue.js</p>
+                    </div>
 
-            <hr>
-
-            <p class="skills__info">
-                Elles sont en constantes améliorations, <br>
-                je vous présente ici les langages, framework et outils que j'ai appris à utiliser tout au long de mon parcours.
-            </p>
-
-            <div class="skills__icon">
-                <div>
-                    <i class="fab fa-html5"></i>
-                    <p>HTML</p>
-                </div>
-                
-                <div>
-                    <i class="fab fa-css3-alt"></i>
-                    <p>CSS</p>
-                </div>
-
-                <div>
-                    <i class="fab fa-js-square"></i>
-                    <p>JavaScript</p>
-                </div>
-
-                <div>
-                    <i class="fab fa-node"></i>
-                    <p>Node.js / express</p>
-                </div>
-
-                <div>
-                    <i class="fas fa-database"></i>
-                    <p>MySQL</p>
-                </div>
-                
-                <div>
-                    <i class="fab fa-sass"></i></i>
-                    <p>Sass</p>
-                </div>
-                
-                <div>
-                    <i class="fab fa-bootstrap"></i>
-                    <p>Bootstrap</p>
-                </div>
-
-                <div>
-                    <i class="fab fa-vuejs"></i>
-                    <p>Vue.js</p>
-                </div>
-
-                <div>
-                    <i class="fab fa-github-square"></i>
-                    <p>Github</p>
+                    <div>
+                        <i class="fab fa-github-square"></i>
+                        <p>Github</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="layout">
-        <h2>Contact</h2>
+
+        <section id="portfolio-ancre" class="portfolio">
+            <div class="layout">
+                <h2>Réalisations</h2>
+
+                <hr>
+
+                <div class="portfolio__layout">
+                    <div class="thumbnails">
+                        <div>
+                            <img src="./images/reservia.png" alt="reservia" class="thumbnails__picture">
         
-    </footer>
-</body>
+                            <a href="https://github.com/FRopers/Ropersflavien_2_02102020" class="github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+        
+                        <div class="thumbnails__text">
+                            <h3>Réservia</h3>
+                            <p>Intégration d'une maquette en HTML/CSS</p>
+                            <a href="https://reservia.flavien-ropers.fr/">Accéder au site</a>
+                        </div>          
+                    </div>
+            
+                    <div class="thumbnails">
+                        <div>
+                            <img src="./images/ohmyfood.png" alt="ohmyfood" class="thumbnails__picture">
+        
+                            <a href="https://github.com/FRopers/Ropersflavien_3_02112020" class="github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+        
+                        <div class="thumbnails__text">
+                            <h3>Ohmyfood</h3>
+                            <p>Intégration d'une maquette en HTML/CSS en utilisant sass pour les animations</p>
+                            <a href="http://ohmyfood.flavien-ropers.fr/">Accéder au site</a>
+                        </div>
+                    </div>
+        
+                    <div class="thumbnails">
+                        <div>
+                            <img src="./images/orinoco.png" alt="orinoco" class="thumbnails__picture">
+        
+                            <a href="https://github.com/FRopers/Ropersflavien_5_28122020" class="github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+        
+                        <div class="thumbnails__text">
+                            <h3>Orinoco</h3>
+                            <p>Création de la partie frontend d'un site e-commerce en utisant bootsratp et JavaScript</p>
+                            <a href="#">Accéder au site</a>
+                        </div>       
+                    </div>
+                    
+                    <div class="thumbnails">
+                        <div>
+                            <img src="./images/so_pekocko.png" alt="so_pekocko" class="thumbnails__picture">
+        
+                            <a href="https://github.com/FRopers/Ropersflavien_6_0302021" class="github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+        
+                        <div class="thumbnails__text">
+                            <h3>So Pekocko</h3>
+                            <p>Création d'une API avec Node.js et le framework express pour une application d'avis gastronomique</p>
+                            <a href="#">Accéder au site</a>
+                        </div>
+                    </div>
+                    
+                    <div class="thumbnails">
+                        <div>
+                            <img src="./images/groupomania.png" alt="groupomania" class="thumbnails__picture">
+        
+                            <a href="https://github.com/FRopers/Ropersflavien_7_19022021" class="github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+        
+                        <div class="thumbnails__text">
+                            <h3>Groupomania</h3>
+                            <p>Création d'un réseau social d’entreprise en utilisant Vue.js et MySQL pour valider la formation d'OpenClassrooms.</p>
+                            <a href="#">Accéder au site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div id="contact-ancre" class="layout">
+                <h2>Contact</h2>
+                <hr>
+                <div class="footer-icon">
+                    <div>
+                        <a href="mailto:ropersflavien@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/flavien-ropers-19434620b/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/FRopers/"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>       
+        </footer>
+
+        <script src="/js/main.js"></script>
+    </body>
 </html>
