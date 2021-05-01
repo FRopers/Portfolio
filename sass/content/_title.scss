@@ -5,8 +5,10 @@
     height: 150px;
     width: 100%;
     margin-top: 50px;
-    background-color: $color_primary;
+    background: radial-gradient(circle, $color_primary 35%, $color_secondary 100%);
     & div {
         color: $color_txt_primary;
+        font-size: 2em;
+        font-weight: 700;
     }
 }

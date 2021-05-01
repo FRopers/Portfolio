@@ -28,7 +28,7 @@
         max-height: auto;
         border-radius: inherit;
         object-fit: cover;
-        border-bottom: 1px solid #c7c7c7;
+        border-bottom: 1px solid $color_tertiary;
     }
     & .fa-github {
         position: absolute;
@@ -40,6 +40,9 @@
         }
     }
     &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 10px;
         & h3 {
             justify-content: start;
@@ -51,11 +54,19 @@
         }
         & a {
             @include btn($background_color_primary);
-            border: 1px solid #c7c7c7;
-            margin-bottom: 20px;
+            border: 1px solid $color_tertiary;
         }
     }
     &:hover {
         animation: thumbnails 400ms ease-in-out forwards;
+    }
+    @media (max-width: 450px) {
+        width: 300px;
+        height: auto;
+        font-size: 1em;
+        & p {
+            margin-bottom: 10px;
+            height: auto;
+        }
     }
 }
